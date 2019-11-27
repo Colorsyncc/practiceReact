@@ -28,7 +28,7 @@ class App extends Component {
   render(){
     const { count }  = this.state;
     return (
-    <div class="root">
+    <div className="root">
       <TestEvents 
         handleClickIncrement={this.handleClickIncrement}
         handleClickDecrement={this.handleClickDecrement}
