@@ -13,7 +13,7 @@ const Name = props => {
 
     return (
         <div className="container">
-        
+            Este div lo agrego solo para mostrar algo, mira la consola de Chrome :V
         </div>
     )
 }
