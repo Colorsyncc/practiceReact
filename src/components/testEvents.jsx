@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const TestEvents = ({ handleClickDecrement , handleClickIncrement , count}) => {
 
-    return (
-        <div className="container">
-            <h1>{ count }</h1>
-            <button onClick={handleClickIncrement}>+</button>
-            <button onClick={handleClickDecrement}>-</button>
-        </div>
-    )
+class TestEvents extends Component {
+
+render() {
+
+        return (
+            <div className="container">
+                <h1>ctm</h1>
+                <button onClick={this.handleClickIncrement}>+</button>
+                <button onClick={this.handleClickDecrement}>-</button>
+            </div>
+        )
+    }
+
 }
 
 
