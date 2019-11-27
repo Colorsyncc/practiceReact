@@ -1,43 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import TestEvents from './components/TestEvents';
+import Name from './components/Name';
 
 class App extends Component {
-    constructor(){
-      super();  
-      this.state = {
-          count: 0
-        }
-    }
-
-  handleClickIncrement = () => {
-      this.setState({
-          count: this.state.count +1
-      });
-  }
-
-  handleClickDecrement = () => {
-    if(this.state.count === 0){
-      return;
-    }
-    this.setState({
-      count: this.state.count -1
-    })
-  }
-
   render(){
-    const { count }  = this.state;
     return (
     <div className="root">
-      <TestEvents 
-        handleClickIncrement={this.handleClickIncrement}
-        handleClickDecrement={this.handleClickDecrement}
-        count={count}
+      
+      {/* Aqui llamamos al componente Name y le pasamos 3 propiedades */} 
+      <Name 
+        name={'ColorSync'} 
+        age='12' 
+        junior={true} 
       />
     </div>
     )
   }
 }
-
 
 export default App;
