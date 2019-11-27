@@ -1,27 +1,42 @@
 import React, { Component } from 'react';
 import './App.css';
+import TestEvents from './components/TestEvents';
 
-
-
-
-class App extends Component() {
+class App extends Component {
     constructor(){
-        this.state = {
+      super();  
+      this.state = {
           count: 0
         }
     }
 
-handleClickIncrement = () => {
-    this.setState({
-        count: this.state.count +1
-    });
-}
+  handleClickIncrement = () => {
+      this.setState({
+          count: this.state.count +1
+      });
+  }
 
-handleClickDecrement = () => {
-  this.setState({
-    count: this.state.count -1
-  })
- }
+  handleClickDecrement = () => {
+    if(this.state.count === 0){
+      return;
+    }
+    this.setState({
+      count: this.state.count -1
+    })
+  }
+
+  render(){
+    const { count }  = this.state;
+    return (
+    <div className="root">
+      <TestEvents 
+        handleClickIncrement={this.handleClickIncrement}
+        handleClickDecrement={this.handleClickDecrement}
+        count={count}
+      />
+    </div>
+    )
+  }
 }
 
 
