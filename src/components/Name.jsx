@@ -1,13 +1,10 @@
 import React from 'react';
 
-const Name = (props) => {
-    console.log(props);
+const Name = ({ firstName }) => {
     
-
-
     return (
         <div className="container">
-            <h1></h1>
+            <h1>{firstName}</h1>
         </div>
     )
 }
