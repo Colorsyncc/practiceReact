@@ -11,7 +11,7 @@ class App extends Component {
       <Name 
         name={'ColorSync'} 
         age='12' 
-        junior={true} 
+        junior={true}
       />
     </div>
     )
