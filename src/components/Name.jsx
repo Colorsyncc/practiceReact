@@ -5,7 +5,9 @@ const Name = (props) => {
             
     return (
         <div className="container">
-           
+            <h1>
+               {  Object.values(props.data[0]) }
+            </h1>   
         </div>
     )
 }
