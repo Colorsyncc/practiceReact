@@ -10,4 +10,6 @@ const Name = ({ name })  => {
     )
 }
 
+Name.displayName = 'Name';
+
 export default Name;
