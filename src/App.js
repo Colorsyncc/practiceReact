@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import TestEvents from './components/testEvents';
+import Name from './components/Name';
 
 class App extends Component {
 
 render() {
-  const { firstName } = this.props
+    
     return (
     <div className="root">
-        <TestEvents firstName={'El Terrible de ColorSync'}/>
+        <Name firstName='El Terrible de ColorSync'/>
     </div>
     )
   }
