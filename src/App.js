@@ -3,37 +3,12 @@ import './App.css';
 import TestEvents from './components/testEvents';
 
 class App extends Component {
-    constructor(){
-      super();  
-      this.state = {
-          count: 0
-        }
-    }
 
-  handleClickIncrement = () => {
-      this.setState({
-          count: this.state.count +1
-      });
-  }
-
-  handleClickDecrement = () => {
-    if(this.state.count === 0){
-      return;
-    }
-    this.setState({
-      count: this.state.count -1
-    })
-  }
-
-  render(){
-    const { count }  = this.state;
+render() {
+  const { firstName } = this.props
     return (
     <div className="root">
-      <TestEvents 
-        handleClickIncrement={this.handleClickIncrement}
-        handleClickDecrement={this.handleClickDecrement}
-        count={count}
-      />
+        <TestEvents firstName={'El Terrible de ColorSync'}/>
     </div>
     )
   }
