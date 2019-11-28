@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Name = (props) => {
-            console.log(props.data[0]);
+            console.log(props.data);
             
     return (
         <div className="container">
             <h1>
-               {  Object.values(props.data[0]) }
+               {  props.data }
             </h1>   
         </div>
     )

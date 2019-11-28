@@ -10,12 +10,15 @@ render() {
 
   
   const data = [
-    {name1:'Color', name2:'Mental', name3:'Rogue'}
+    'Color', 'Mental','Rogue'
   ]
   
     return (
     <div className="root">
-        <Name data={data}/>
+        <Name data={data[0]}/>
+        <Name data={data[1]}/>
+        <Name data={data[2]}/>
+
     </div>
     )
   }
