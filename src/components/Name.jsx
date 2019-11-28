@@ -1,16 +1,13 @@
 import React from 'react';
 
-const Name = (props) => {
-            console.log(props.data);
-            
+const Name = ({ name })  => {
     return (
         <div className="container">
             <h1>
-               {  props.data }
+               { ` My name is ${name}` }
             </h1>   
         </div>
     )
 }
-
 
 export default Name;

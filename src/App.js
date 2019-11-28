@@ -1,28 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import Name from './components/Name';
+import { Data } from './constants/Data';
 
 class App extends Component {
-
-
-
-render() {
-
-  
-  const data = [
-    'Color', 'Mental','Rogue'
-  ]
-  
-    return (
-    <div className="root">
-        <Name data={data[0]}/>
-        <Name data={data[1]}/>
-        <Name data={data[2]}/>
-
-    </div>
-    )
-  }
+    render() {
+        return (
+            <div className="root">
+                { Data.map((name , key) => <Name name={name} key={key} />)}
+            </div>
+        )
+    }
 }
-
 
 export default App;
