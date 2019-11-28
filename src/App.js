@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import TestEvents from './components/TestEvents';
+import TestEvents from './components/testEvents';
 
 class App extends Component {
     constructor(){
