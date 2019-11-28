@@ -8,7 +8,7 @@ render() {
     
     return (
     <div className="root">
-        <Name firstName='El Terrible de ColorSync'/>
+        <Name firstName={'El Terrible de ColorSync'}/>
     </div>
     )
   }
