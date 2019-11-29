@@ -8,7 +8,7 @@ const TestEvents = ({ handleClickDecrement , handleClickIncrement , count}) => {
             <button onClick={handleClickIncrement}>+</button>
             <button onClick={handleClickDecrement}>-</button>
         </div>
-    )
+    )   
 }
 
 

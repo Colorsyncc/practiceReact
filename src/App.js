@@ -4,25 +4,18 @@ import Name from './components/Name';
 
 class App extends Component {
 
+    render() {
+      const data = ['Color', 'Mental','Rogue']
+      
+        return (
+        <div className="root">
+            <Name name={data[0]}/>
+            <Name name={data[1]}/>
+            <Name name={data[2]}/>
 
-
-render() {
-
-  
-  const data = [
-    'Color', 'Mental','Rogue'
-  ]
-  
-    return (
-    <div className="root">
-        <Name data={data[0]}/>
-        <Name data={data[1]}/>
-        <Name data={data[2]}/>
-
-    </div>
-    )
-  }
+        </div>
+        )
+      }
 }
-
 
 export default App;
