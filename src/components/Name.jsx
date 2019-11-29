@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Name = ({ name })  => {
+const Name = ({ name, age })  => {
     return (
         <div className="container">
             <h1>
-               { ` My name is ${name}` }
-            </h1>   
+               { `My name is ${name} and my age is ${age}` }
+            </h1>
         </div>
     )
 }

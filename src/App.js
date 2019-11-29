@@ -7,7 +7,13 @@ class App extends Component {
     render() {
         return (
             <div className="root">
-                { Data.map((name , key) => <Name name={name} key={key} />)}
+                { Data.map((data , key) => 
+                <Name 
+                    name={data.name}
+                    key={key}
+                    age={data.age}
+                    />
+                )}
             </div>
         )
     }
